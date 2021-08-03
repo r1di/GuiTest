@@ -12,6 +12,10 @@ namespace GuiTest
 {
     public partial class Form1 : Form
     {
+
+        double FirstNumber;
+        string Operation;
+
         public Form1()
         {
             InitializeComponent();
@@ -134,6 +138,85 @@ namespace GuiTest
             else
             {
                 textBox1.Text = textBox1.Text + "0";
+            }
+        }
+
+        private void plus_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(textBox1.Text);
+            textBox1.Text = "0";
+            Operation = "+";
+        }
+
+        private void minus_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(textBox1.Text);
+            textBox1.Text = "0";
+            Operation = "-";
+        }
+
+        private void geteilt_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(textBox1.Text);
+            textBox1.Text = "0";
+            Operation = "/";
+        }
+
+        private void punkt_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + ".";
+        }
+
+        private void clear_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "0";
+        }
+
+        private void mal_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(textBox1.Text);
+            textBox1.Text = "0";
+            Operation = "*";
+        }
+
+        private void ergebnis_Click(object sender, EventArgs e)
+        {
+            double SecondNumber;
+            double Result;
+
+            SecondNumber = Convert.ToDouble(textBox1.Text);
+
+            if (Operation == "+")
+            {
+                Result = (FirstNumber + SecondNumber);
+                textBox1.Text = Convert.ToString(Result);
+                FirstNumber = Result;
+            }
+            if (Operation == "-")
+            {
+                Result = (FirstNumber - SecondNumber);
+                textBox1.Text = Convert.ToString(Result);
+                FirstNumber = Result;
+            }
+            if (Operation == "*")
+            {
+                Result = (FirstNumber * SecondNumber);
+                textBox1.Text = Convert.ToString(Result);
+                FirstNumber = Result;
+            }
+            if (Operation == "/")
+            {
+                if (SecondNumber == 0)
+                {
+                    textBox1.Text = "Cannot divide by zero";
+
+                }
+                else
+                {
+                    Result = (FirstNumber / SecondNumber);
+                    textBox1.Text = Convert.ToString(Result);
+                    FirstNumber = Result;
+                }
             }
         }
     }

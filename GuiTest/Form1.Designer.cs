@@ -39,7 +39,14 @@ namespace GuiTest
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.button0 = new System.Windows.Forms.Button();
+            this.punkt = new System.Windows.Forms.Button();
+            this.clear = new System.Windows.Forms.Button();
+            this.plus = new System.Windows.Forms.Button();
+            this.minus = new System.Windows.Forms.Button();
+            this.geteilt = new System.Windows.Forms.Button();
+            this.mal = new System.Windows.Forms.Button();
+            this.ergebnis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -153,23 +160,107 @@ namespace GuiTest
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // button10
+            // button0
             // 
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(130, 196);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 10;
-            this.button10.Text = "0";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button0.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button0.Location = new System.Drawing.Point(130, 196);
+            this.button0.Name = "button0";
+            this.button0.Size = new System.Drawing.Size(75, 23);
+            this.button0.TabIndex = 10;
+            this.button0.Text = "0";
+            this.button0.UseVisualStyleBackColor = true;
+            this.button0.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // punkt
+            // 
+            this.punkt.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.punkt.Location = new System.Drawing.Point(29, 196);
+            this.punkt.Name = "punkt";
+            this.punkt.Size = new System.Drawing.Size(75, 23);
+            this.punkt.TabIndex = 11;
+            this.punkt.Text = ".";
+            this.punkt.UseVisualStyleBackColor = true;
+            this.punkt.Click += new System.EventHandler(this.punkt_Click);
+            // 
+            // clear
+            // 
+            this.clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.clear.Location = new System.Drawing.Point(228, 196);
+            this.clear.Name = "clear";
+            this.clear.Size = new System.Drawing.Size(75, 23);
+            this.clear.TabIndex = 12;
+            this.clear.Text = "C";
+            this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
+            // 
+            // plus
+            // 
+            this.plus.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plus.Location = new System.Drawing.Point(336, 61);
+            this.plus.Name = "plus";
+            this.plus.Size = new System.Drawing.Size(75, 23);
+            this.plus.TabIndex = 13;
+            this.plus.Text = "+";
+            this.plus.UseVisualStyleBackColor = true;
+            this.plus.Click += new System.EventHandler(this.plus_Click);
+            // 
+            // minus
+            // 
+            this.minus.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minus.Location = new System.Drawing.Point(336, 106);
+            this.minus.Name = "minus";
+            this.minus.Size = new System.Drawing.Size(75, 23);
+            this.minus.TabIndex = 14;
+            this.minus.Text = "-";
+            this.minus.UseVisualStyleBackColor = true;
+            this.minus.Click += new System.EventHandler(this.minus_Click);
+            // 
+            // geteilt
+            // 
+            this.geteilt.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.geteilt.Location = new System.Drawing.Point(336, 195);
+            this.geteilt.Name = "geteilt";
+            this.geteilt.Size = new System.Drawing.Size(75, 23);
+            this.geteilt.TabIndex = 15;
+            this.geteilt.Text = "/";
+            this.geteilt.UseVisualStyleBackColor = true;
+            this.geteilt.Click += new System.EventHandler(this.geteilt_Click);
+            // 
+            // mal
+            // 
+            this.mal.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mal.Location = new System.Drawing.Point(336, 151);
+            this.mal.Name = "mal";
+            this.mal.Size = new System.Drawing.Size(75, 23);
+            this.mal.TabIndex = 16;
+            this.mal.Text = "*";
+            this.mal.UseVisualStyleBackColor = true;
+            this.mal.Click += new System.EventHandler(this.mal_Click);
+            // 
+            // ergebnis
+            // 
+            this.ergebnis.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ergebnis.Location = new System.Drawing.Point(165, 236);
+            this.ergebnis.Name = "ergebnis";
+            this.ergebnis.Size = new System.Drawing.Size(84, 38);
+            this.ergebnis.TabIndex = 17;
+            this.ergebnis.Text = "=";
+            this.ergebnis.UseVisualStyleBackColor = true;
+            this.ergebnis.Click += new System.EventHandler(this.ergebnis_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(424, 286);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.ergebnis);
+            this.Controls.Add(this.mal);
+            this.Controls.Add(this.geteilt);
+            this.Controls.Add(this.minus);
+            this.Controls.Add(this.plus);
+            this.Controls.Add(this.clear);
+            this.Controls.Add(this.punkt);
+            this.Controls.Add(this.button0);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -199,7 +290,14 @@ namespace GuiTest
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button0;
+        private System.Windows.Forms.Button punkt;
+        private System.Windows.Forms.Button clear;
+        private System.Windows.Forms.Button plus;
+        private System.Windows.Forms.Button minus;
+        private System.Windows.Forms.Button geteilt;
+        private System.Windows.Forms.Button mal;
+        private System.Windows.Forms.Button ergebnis;
     }
 }
 
