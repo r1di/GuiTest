@@ -14,7 +14,7 @@ namespace GuiTest
     {
 
         double FirstNumber;
-        string Operation;
+        string Operation; //für die Mathe-Operatoren
 
         public Form1()
         {
@@ -131,40 +131,33 @@ namespace GuiTest
 
         private void button10_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
-            {
-                textBox1.Text = "0";
-            }
-            else
-            {
-                textBox1.Text = textBox1.Text + "0";
-            }
+            textBox1.Text = textBox1.Text + "0";
         }
 
         private void plus_Click(object sender, EventArgs e)
         {
-            FirstNumber = Convert.ToDouble(textBox1.Text);
+            FirstNumber = double.Parse(textBox1.Text);
             textBox1.Text = "0";
             Operation = "+";
         }
 
         private void minus_Click(object sender, EventArgs e)
         {
-            FirstNumber = Convert.ToDouble(textBox1.Text);
+            FirstNumber = double.Parse(textBox1.Text);
             textBox1.Text = "0";
             Operation = "-";
         }
 
         private void geteilt_Click(object sender, EventArgs e)
         {
-            FirstNumber = Convert.ToDouble(textBox1.Text);
+            FirstNumber = double.Parse(textBox1.Text);
             textBox1.Text = "0";
             Operation = "/";
         }
 
         private void punkt_Click(object sender, EventArgs e)
         {
-            textBox1.Text = textBox1.Text + ".";
+            textBox1.Text = textBox1.Text + ",";
         }
 
         private void clear_Click(object sender, EventArgs e)
@@ -174,7 +167,7 @@ namespace GuiTest
 
         private void mal_Click(object sender, EventArgs e)
         {
-            FirstNumber = Convert.ToDouble(textBox1.Text);
+            FirstNumber = double.Parse(textBox1.Text);
             textBox1.Text = "0";
             Operation = "*";
         }
@@ -184,7 +177,7 @@ namespace GuiTest
             double SecondNumber;
             double Result;
 
-            SecondNumber = Convert.ToDouble(textBox1.Text);
+            SecondNumber = double.Parse(textBox1.Text);
 
             if (Operation == "+")
             {

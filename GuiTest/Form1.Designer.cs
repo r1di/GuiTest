@@ -40,7 +40,7 @@ namespace GuiTest
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button0 = new System.Windows.Forms.Button();
-            this.punkt = new System.Windows.Forms.Button();
+            this.komma = new System.Windows.Forms.Button();
             this.clear = new System.Windows.Forms.Button();
             this.plus = new System.Windows.Forms.Button();
             this.minus = new System.Windows.Forms.Button();
@@ -171,16 +171,16 @@ namespace GuiTest
             this.button0.UseVisualStyleBackColor = true;
             this.button0.Click += new System.EventHandler(this.button10_Click);
             // 
-            // punkt
+            // komma
             // 
-            this.punkt.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.punkt.Location = new System.Drawing.Point(29, 196);
-            this.punkt.Name = "punkt";
-            this.punkt.Size = new System.Drawing.Size(75, 23);
-            this.punkt.TabIndex = 11;
-            this.punkt.Text = ".";
-            this.punkt.UseVisualStyleBackColor = true;
-            this.punkt.Click += new System.EventHandler(this.punkt_Click);
+            this.komma.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.komma.Location = new System.Drawing.Point(29, 196);
+            this.komma.Name = "komma";
+            this.komma.Size = new System.Drawing.Size(75, 23);
+            this.komma.TabIndex = 11;
+            this.komma.Text = ",";
+            this.komma.UseVisualStyleBackColor = true;
+            this.komma.Click += new System.EventHandler(this.punkt_Click);
             // 
             // clear
             // 
@@ -259,7 +259,7 @@ namespace GuiTest
             this.Controls.Add(this.minus);
             this.Controls.Add(this.plus);
             this.Controls.Add(this.clear);
-            this.Controls.Add(this.punkt);
+            this.Controls.Add(this.komma);
             this.Controls.Add(this.button0);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -291,7 +291,7 @@ namespace GuiTest
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button0;
-        private System.Windows.Forms.Button punkt;
+        private System.Windows.Forms.Button komma;
         private System.Windows.Forms.Button clear;
         private System.Windows.Forms.Button plus;
         private System.Windows.Forms.Button minus;
